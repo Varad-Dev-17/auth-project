@@ -1,27 +1,27 @@
 # 🔐 Auth Project
 
-> 🚀 Learning by building, breaking, fixing, and improving.
+&gt; 🚀 Learning by building, breaking, fixing, and improving.
 
 This project is part of my backend development journey, where I'm exploring how authentication and authorization work in real-world applications using Node.js and MongoDB.
 
-## 🛠️ What I'm Learning
+## 🛠️ Tech Stack
 
 - Node.js
 - Express.js
 - MongoDB Atlas
-- Mongoose
-- Authentication & Authorization
 - JWT (JSON Web Tokens)
 - REST APIs
-- Backend Development
 
 ## 📌 Current Progress
 
 ✅ Project setup completed
 ✅ Express server configured
 ✅ MongoDB Atlas connected
-✅ Authentication routes created
-✅ Signup endpoint added
+✅ User model with validation
+✅ Signup endpoint with Joi validation
+✅ Password hashing with bcryptjs
+✅ Duplicate user check
+✅ Error handling
 
 ## 🎯 Goal
 
@@ -29,6 +29,10 @@ Build a complete authentication system from scratch and gain hands-on experience
 
 ## 🚧 Work in Progress
 
-New features, improvements, and learnings will be added as I continue building this project.
+- Login endpoint with JWT
+- Protected routes
+- Email verification
+- Password reset
+- Frontend integration
 
 Stay tuned! ✨
