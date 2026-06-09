@@ -1,9 +1,22 @@
 import express from "express";
-import { signUp } from "../controllers/authController.js";
+import {
+  signUp,
+  signIn,
+  signOut,
+  sendVerificationCode,
+  verifyVerificationCode,
+  changePassword,
+} from "../controllers/AuthController.js";
+
+import { identifier } from "../middlewares/identification.js";
 
 const router = express.Router();
 
 router.post("/signup", signUp);
-// router.post("/login", login);
+router.post("/signin", signIn);
+router.post("/signout", signOut);
+router.patch("/send-verification-code", sendVerificationCode);
+router.patch("/verify-verification-code", verifyVerificationCode);
+router.patch("/change-password", identifier, changePassword);
 
 export default router;
