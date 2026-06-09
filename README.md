@@ -9,7 +9,11 @@ This project is part of my backend development journey, where I'm exploring how 
 - Node.js
 - Express.js
 - MongoDB Atlas
+- Mongoose
 - JWT (JSON Web Tokens)
+- bcryptjs
+- Joi
+- Nodemailer
 - REST APIs
 
 ## 📌 Current Progress
@@ -21,7 +25,13 @@ This project is part of my backend development journey, where I'm exploring how 
 ✅ Signup endpoint with Joi validation
 ✅ Password hashing with bcryptjs
 ✅ Duplicate user check
-✅ Error handling
+✅ Signin endpoint with JWT token
+✅ Cookie-based authentication
+✅ Signout endpoint
+✅ Email verification with 6-digit code
+✅ HMAC code hashing
+✅ Change password (protected route)
+✅ JWT middleware for protected routes
 
 ## 🎯 Goal
 
@@ -29,10 +39,7 @@ Build a complete authentication system from scratch and gain hands-on experience
 
 ## 🚧 Work in Progress
 
-- Login endpoint with JWT
-- Protected routes
-- Email verification
-- Password reset
+- Forgot password
 - Frontend integration
 
 Stay tuned! ✨
