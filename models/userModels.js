@@ -1,8 +1,13 @@
-// models/userModel.js
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema(
   {
+    username: {
+      type: String,
+      required: [true, "Name is required"],
+      trim: true,
+      minLength: [3, "Name must be at least 3 characters"],
+    },
     email: {
       type: String,
       required: [true, "Email is required"],
@@ -31,6 +36,10 @@ const userSchema = new mongoose.Schema(
     },
     forgotPasswordCode: {
       type: String,
+      select: false,
+    },
+    forgotPasswordCodeValidation: {
+      type: Date,
       select: false,
     },
   },
